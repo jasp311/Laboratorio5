@@ -1,8 +1,6 @@
-# Laboratorio5
-Laboratorio 4 de robótica 2023-2
+## Laboratorio5
+Laboratorio 5 de robótica 2023-2
 
-
-## Laboratorio 4 Robótica
 ### Integrantes: 
 - Norma Lorena Martinez Zavala
 - Miguel Angel Sarmiento Cabarcas
