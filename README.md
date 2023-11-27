@@ -43,7 +43,11 @@ $$ P_{w2} = P_{w}-L_{1}Z_{0} $$
 
 Con este pw2 se halla el angulo Theta3 con la ley del coseno
 
-$$ P^{2}_{W2} = l^{2}_{2}+ $$
+![image](https://github.com/jasp311/Laboratorio_5/assets/47614570/5883d1f9-6073-4efe-b031-89678a3df457)
+
+![image](https://github.com/jasp311/Laboratorio_5/assets/47614570/9522674a-280b-4500-9a01-0483ccfde006)
+
+
 
 
 
