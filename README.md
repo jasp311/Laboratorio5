@@ -23,9 +23,15 @@ Para facilitar el hallazgo de los diferentes angulos del robot pincher se analiz
 
 ![image](https://github.com/jasp311/Laboratorio_5/assets/47614570/9c773d14-1cf8-4869-b974-c6a3810e9783)
 
+Una forma de resolver este problema es aplicar la regla del paralelogramo para sumar vectores. Si dibujamos el vector tool y el vector L que representa el desplazamiento de la muñeca, podemos obtener el vector de la muñeca como la diagonal del paralelogramo formado por estos dos vectores. Así, se reconocer que el vector de la muñeca es el mismo vector tool menos un desplazamiento L en la dirección de a.
+
 $$ P_{w} = P_{TCP} - I_{4a} $$
 
-Una forma de resolver este problema es aplicar la regla del paralelogramo para sumar vectores. Si dibujamos el vector tool y el vector L que representa el desplazamiento de la muñeca, podemos obtener el vector de la muñeca como la diagonal del paralelogramo formado por estos dos vectores. Así, se reconocer que el vector de la muñeca es el mismo vector tool menos un desplazamiento L en la dirección de a.
+Para determinar el ángulo 1, se utiliza la geometría del triángulo formado por el eje del robot, el punto de contacto con el suelo y el centro de la cámara. Se aplica el teorema de Pitágoras y la ley de cosenos para obtener el valor del ángulo 1 en función de las dimensiones del robot y la distancia al objetivo.
+
+![image](https://github.com/jasp311/Laboratorio_5/assets/47614570/25b02a56-51e3-4bae-ad36-d4b6ed4af76a)
+
+$$ \THETA_{1} = atan_{2} (y_{w},x_{w}) $$
 
 
 ### Desarrollo de la cinemática directa:
