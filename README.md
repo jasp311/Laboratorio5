@@ -19,6 +19,15 @@ El primer paso para la elaboración de este laboratorio fué tomar las medidas d
 Medidas de los eslabones:
 [![IMG-20231105-213426.jpg](https://i.postimg.cc/RZcyVZmz/IMG-20231105-213426.jpg)](https://postimg.cc/hXtp2ghC)
 
+Para facilitar el hallazgo de los diferentes angulos del robot pincher se analiza el vector de la muñeca y no el vector del tool.
+
+![image](https://github.com/jasp311/Laboratorio_5/assets/47614570/9c773d14-1cf8-4869-b974-c6a3810e9783)
+
+$ P_{w} = P_{TCP} - I_{4a} $
+
+Una forma de resolver este problema es aplicar la regla del paralelogramo para sumar vectores. Si dibujamos el vector tool y el vector L que representa el desplazamiento de la muñeca, podemos obtener el vector de la muñeca como la diagonal del paralelogramo formado por estos dos vectores. Así, se reconocer que el vector de la muñeca es el mismo vector tool menos un desplazamiento L en la dirección de a.
+
+
 ### Desarrollo de la cinemática directa:
   Se hizo uso de SerialLink para la construcción del robot a partir de los parámetros DH estandar, también se calculó la matriz de transformación homogenea que relaciona el sistema de coordenadas de World con el sistema de coordendas del TCP (H0TCP).
 
