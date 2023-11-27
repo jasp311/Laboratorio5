@@ -69,9 +69,8 @@ Para diseñar las trayectorias, se usó Dynamixel wizard para dibujar el espacio
 
 ![image](https://github.com/jasp311/Laboratorio_5/assets/47614570/69d0457f-728d-4891-9b7d-e4a66f806489)
 
-Los puntos se ubicaron en autocad siguiendo las trayectorias de las figuras y se extrajeron sus coordenadas. Luego se creó una lista de vectores con tres coordenadas (x,y,z) en python y se ajustó la coordenada z manualmente. Así, cuando el marcador dibujaba, z era cero y cuando había un salto, z aumentaba para evitar trazos indeseados.
+python como una lista de vectores de tres componentes (x,y,z) y se ajustaron las coordenadas z manualmente. Así, se evitó que el marcador dibujara cuando había un cambio de trayectoria, aumentando el valor de z a cero.
    
-
 
 
 ### Codigo
