@@ -43,8 +43,7 @@ $$ P_{w2} = P_{w}-L_{1}Z_{0} $$
 
 Con este pw2 se halla el angulo Theta3 con la ley del coseno
 
-$$ P + l^{2}_{3}-2l_{2} l_{3} cos (180-\theta_{3}) $$
-
+$$ P_{2}_{w2} $$
 
 
 
