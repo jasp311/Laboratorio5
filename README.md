@@ -74,31 +74,6 @@ python como una lista de vectores de tres componentes (x,y,z) y se ajustaron las
 
 
 ### Codigo
-Para iniciar el control de los motores del pincher, se debe modificar el archivo de configuracion de dynamixel one motor que se encuentra en el sitio web del curso, agregando los parametros correspondientes a los 5 motores que forman parte del brazo robotico. Luego, se debe escribir el codigo en python que importe las siguientes dependencias.
-
-![image](https://github.com/misarmientoc/Robotica_lab4/assets/47614570/958b992b-c6d7-441f-a657-740494cdee87)
-
-Para trabajar con ROS en python, se necesita importar el módulo de rospy, que proporciona las funciones y clases esenciales para interactuar con el sistema. También se utiliza el módulo de numpy, que permite realizar cálculos numéricos y operaciones matriciales de forma eficiente. Además, se requieren varios tópicos y mensajes específicos de ROS, como el tipo JointTrajectory, que representa una secuencia de posiciones y velocidades de las articulaciones.
-
-La función Join_publisher se encarga de crear un objeto Publisher que publica en el tópico joint_trajectory, que es usado por el controlador del brazo robótico. Dentro de un bucle, mientras rospy esté activo, se envían los puntos guardados al motor. Esta función es una función residual de pruebas anteriores y no se utiliza en el código principal del programa.
-
-![image](https://github.com/misarmientoc/Robotica_lab4/assets/47614570/ba88d020-1ab9-424c-a642-13c2025a69a1)
-
-Este código de python usa las funciones callback y listener para trabajar con los datos de los servomotores del robot. El listener inicializa el nodo de ROS y se suscribe al tópico de los estados de las articulaciones. El callback guarda una variable global con el ángulo de cada articulación en grados, usando una conversión simple de radianes a grados 180/pi.
-
-![image](https://github.com/misarmientoc/Robotica_lab4/assets/47614570/3d024ba0-7000-4a51-9198-30e1567ef9ab)
-
-La función jointCommand es una función que envía un comando de dynamixel al motor especificado, usando el servicio de transmitir al motor. El comando de dynamixel tiene cuatro parámetros: el número de comando, el identificador del motor, el nombre de la dirección de memoria y el valor nuevo. La función espera a que el servicio esté disponible y luego envía el comando. Después, espera un tiempo para ROS y devuelve el resultado del comando.
-
-![image](https://github.com/misarmientoc/Robotica_lab4/assets/47614570/33878b69-5e9c-4a71-95d5-8dc469c4f5b9)
-
-Cuando se ejecuta este archivo desde la terminal, se inicia el nodo de ROS y se suscribe al topic de los motores para recibir sus datos. Estos datos se muestran en la terminal junto con el nombre del grupo. A continuación, se crean listas con las posiciones posibles para enviar a los motores, tanto en bits como en grados. Se hace una lista de listas con estas posiciones y se le presentan al usuario en formato de grados.
-
-![image](https://github.com/misarmientoc/Robotica_lab4/assets/47614570/9c6f4692-7118-4b62-ac13-b16f3b355628)
-
-El programa inicia un bucle while que se ejecuta indefinidamente, solicitando al usuario que ingrese un número de posición para controlar el pincher. Mediante un bucle for, se envían los comandos correspondientes a cada motor usando la función join_command, junto con un límite de torque por seguridad. La posición real de cada motor se muestra en la consola, junto con el error respecto a la posición deseada.
-
-![image](https://github.com/misarmientoc/Robotica_lab4/assets/47614570/d73783f0-8dd3-49e4-95fb-688f516ae5c5)
 
 ## MATLAB
 
@@ -119,5 +94,4 @@ En el siguiente video se observa el movimiento del robot
 https://youtu.be/kAmjaRHJvHw?si=97m7ebpFJ07SqSqx
 
 ## Conclusiones
-
--El programa creado logra establecer una comunicación humano-máquina mediante la terminal, aunque la interfaz podría ser más intuitiva en próximos laboratorios. Se tiene como objetivo diseñar una interfaz más atractiva en futuras operaciones.
+Para medir los dibujos del robot, se puede usar una regla de proporción entre la longitud real y la longitud en pixeles. Si la tabla mide 50 cm, y la imagen tiene 273750 pixeles de largo, entonces cada 10 pixeles equivalen a 1.826 mm. Usando el teorema de Pitágoras y el programa Paint, se puede calcular la distancia en pixeles entre dos puntos de la imagen, y luego convertirla a milímetros usando la regla de proporción.
