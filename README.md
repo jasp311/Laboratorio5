@@ -79,19 +79,22 @@ Para diseñar las trayectorias, se usó Dynamixel wizard para dibujar el espacio
 
 Partiendo del codigo ejemplo sync_write.m se genera un archivo que permite controlar 4  motores al tiempo y se genera un switch case para seleccionar cada una de las posiciones y para cerrar el ciclo  y la comunicacion.
 
-![image](https://github.com/misarmientoc/Robotica_lab4/assets/47614570/6fda32ef-cdd8-42ed-a904-42a767216e08)
+![image](https://github.com/jasp311/Laboratorio_5/assets/47614570/c480ffdf-c4a4-4537-9d21-1f0abd7e185f)
 
+El codigo se anexa 
 
 
 ## Desarrollo
 
-A continuación se muestra el pantallazo donde el robot alcanza cada una de las posiciones que son seleccionadas por el usuario:
+Para medir los dibujos del robot, se puede usar una regla de proporción entre la longitud real y la longitud en pixeles. Si la tabla mide 50 cm, y la imagen tiene 273750 pixeles de largo, entonces cada 10 pixeles equivalen a 1.826 mm. Usando el teorema de Pitágoras y el programa Paint, se puede calcular la distancia en pixeles entre dos puntos de la imagen, y luego convertirla a milímetros usando la regla de proporción.
 
-![image](https://github.com/misarmientoc/Robotica_lab4/assets/47614570/417cc620-1d4d-4786-a331-3a7a1c268bd7)
 
-En el siguiente video se observa el movimiento del robot
 
-https://youtu.be/kAmjaRHJvHw?si=97m7ebpFJ07SqSqx
+
+En los siguientes videos se observa el movimiento del robot
+
+https://youtu.be/SBnDFwNGcdg
+
+https://youtu.be/VgBCShoadL4
 
 ## Conclusiones
-Para medir los dibujos del robot, se puede usar una regla de proporción entre la longitud real y la longitud en pixeles. Si la tabla mide 50 cm, y la imagen tiene 273750 pixeles de largo, entonces cada 10 pixeles equivalen a 1.826 mm. Usando el teorema de Pitágoras y el programa Paint, se puede calcular la distancia en pixeles entre dos puntos de la imagen, y luego convertirla a milímetros usando la regla de proporción.
