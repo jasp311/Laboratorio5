@@ -47,56 +47,32 @@ Con este pw2 se halla el angulo Theta3 con la ley del coseno
 
 ![image](https://github.com/jasp311/Laboratorio_5/assets/47614570/9522674a-280b-4500-9a01-0483ccfde006)
 
+Se procede a calcular el ángulo theta2 a partir de la vista lateral, utilizando la ley de cosenos y los ángulos alpha y psi que se definen en la figura. Se obtiene una expresión para theta2 en función de las longitudes de los eslabones y los ángulos mencionados.
+
+
+![image](https://github.com/jasp311/Laboratorio_5/assets/47614570/a31d09d6-1145-4fb1-ab3e-48f459462d09)
+
+Ahora se obtiene Theta 2
+
+![image](https://github.com/jasp311/Laboratorio_5/assets/47614570/07570c60-ea8d-445d-8857-e8568d9c5977)
+
+Finalmente el angulo Theta 4
+
+
+![image](https://github.com/jasp311/Laboratorio_5/assets/47614570/337c4385-825b-4323-b3c3-56132cd1fdbf)
 
 
 
+### Desarrollo de la cinemática inversa:
 
+Para diseñar las trayectorias, se usó Dynamixel wizard para dibujar el espacio de trabajo con las medidas correspondientes. Luego, se crearon dos círculos con esas dimensiones en Autocad, para definir los puntos de las figuras a trazar.
 
-### Desarrollo de la cinemática directa:
-  Se hizo uso de SerialLink para la construcción del robot a partir de los parámetros DH estandar, también se calculó la matriz de transformación homogenea que relaciona el sistema de coordenadas de World con el sistema de coordendas del TCP (H0TCP).
+![image](https://github.com/jasp311/Laboratorio_5/assets/47614570/69d0457f-728d-4891-9b7d-e4a66f806489)
 
-El diagrama que describe el robot pincher es el siguiente
-
-![image](https://github.com/misarmientoc/Robotica_lab4/assets/47614570/6162ab67-abc2-4dc4-8b96-21609a8b636e)
-
-Los marcos de referencia para describir el robot a través de los parámetros DH con base en el diagrama del robot pincher y las distancias de las articulaciones ya medidas son:
-
-![image](https://github.com/misarmientoc/Robotica_lab4/assets/47614570/c49ea090-709e-4f3c-8de1-5d870d302a63)
-
+Los puntos se ubicaron en autocad siguiendo las trayectorias de las figuras y se extrajeron sus coordenadas. Luego se creó una lista de vectores con tres coordenadas (x,y,z) en python y se ajustó la coordenada z manualmente. Así, cuando el marcador dibujaba, z era cero y cuando había un salto, z aumentaba para evitar trazos indeseados.
    
-PhantomII = 
- 
-PhantomII:: 4 axis, RRRR, stdDH, slowRNE    
 
-![image](https://github.com/misarmientoc/Robotica_lab4/assets/66492359/843327aa-e4e1-46a6-a2d1-cabc713166d0)
 
-tool:    t = (0, 0, 0.065), RPY/xyz = (0, 0, 0) deg              
-H0TCP = 4×4    
-         0         0    1.0000    0.1700
-         0   -1.0000         0         0
-    1.0000         0         0    0.1850
-         0         0         0    1.0000
-![image](https://github.com/misarmientoc/Robotica_lab4/assets/66492359/ff1c7bb9-377d-452d-9310-5b32cccaa4ff)
-
-q1 = 1×4    
-    0.4363    0.4363    0.3491   -0.3491
-
-![image](https://github.com/misarmientoc/Robotica_lab4/assets/66492359/e0d103f8-926c-4bb7-a70d-9254cd78d199)
-
-q2 = 1×4    
-   -0.6109    0.6109   -0.5236    0.5236
-
-![image](https://github.com/misarmientoc/Robotica_lab4/assets/66492359/237de157-f726-470d-93ea-dac8150d4ea1)
-
-q3 = 1×4    
-    1.4835   -0.3491    0.9599    0.4363
-
-![image](https://github.com/misarmientoc/Robotica_lab4/assets/66492359/680b1cc3-031e-4e9c-a35e-d972ffa991c5)
-
-q4 = 1×4    
-    1.3963   -0.6109    0.9599   -0.7854
-
-![image](https://github.com/misarmientoc/Robotica_lab4/assets/66492359/eaf9adae-992d-462c-97e7-76bd1df93aa4)
 
 ### Codigo
 Para iniciar el control de los motores del pincher, se debe modificar el archivo de configuracion de dynamixel one motor que se encuentra en el sitio web del curso, agregando los parametros correspondientes a los 5 motores que forman parte del brazo robotico. Luego, se debe escribir el codigo en python que importe las siguientes dependencias.
