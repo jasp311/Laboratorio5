@@ -41,7 +41,9 @@ Se halla un pw2 auxiliar para hallar estos angulos mas facilmente
 
 $$ P_{w2} = P_{w}-L_{1}Z_{0} $$
 
-Con este pw2 se halla el angulo $$ Theta_{3} $$ con la ley del coseno
+Con este pw2 se halla el angulo $ Theta_{3} $ con la ley del coseno
+
+$$ P^{2}_{X2} = l^{2}_{2} + l^{2}_{3}-2l_{2} l_{3} cos (180-\theta_{3}) $$
 
 
 
