@@ -33,6 +33,19 @@ Para determinar el ángulo 1, se utiliza la geometría del triángulo formado po
 
 $$ \Theta_{1} = atan_{2} (y_{w},x_{w}) $$
 
+Se analiza la vista lateral para hallar los angulos theta2 y theta3
+
+![image](https://github.com/jasp311/Laboratorio_5/assets/47614570/fb857897-b6a8-42c5-a6ab-ab055d124c8c)
+
+Se halla un pw2 auxiliar para hallar estos angulos mas facilmente
+
+$$ P_{w2} = P_{w}-L_{1}Z_{0} $$
+
+Con este pw2 se halla el angulo $$ Theta_{3} $$ con la ley del coseno
+
+
+
+
 
 ### Desarrollo de la cinemática directa:
   Se hizo uso de SerialLink para la construcción del robot a partir de los parámetros DH estandar, también se calculó la matriz de transformación homogenea que relaciona el sistema de coordenadas de World con el sistema de coordendas del TCP (H0TCP).
