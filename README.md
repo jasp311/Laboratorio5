@@ -31,7 +31,7 @@ Para determinar el ángulo 1, se utiliza la geometría del triángulo formado po
 
 ![image](https://github.com/jasp311/Laboratorio_5/assets/47614570/25b02a56-51e3-4bae-ad36-d4b6ed4af76a)
 
-$$ \THETA_{1} = atan_{2} (y_{w},x_{w}) $$
+$$ \Theta_{1} = atan_{2} (y_{w},x_{w}) $$
 
 
 ### Desarrollo de la cinemática directa:
