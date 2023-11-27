@@ -98,3 +98,5 @@ https://youtu.be/SBnDFwNGcdg
 https://youtu.be/VgBCShoadL4
 
 ## Conclusiones
+
+La cinemática inversa es una herramienta útil para programar el robot Pincher, ya que permite definir trayectorias complejas con ecuaciones simples. Así, podemos conseguir movimientos precisos y controlados con un bajo consumo de recursos, pero hay que tener en cuenta que el Pincher tiene algunas limitaciones estructurales que generan vibraciones al moverse.
