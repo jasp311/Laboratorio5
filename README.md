@@ -88,12 +88,7 @@ El codigo se anexa
 
 Para medir los dibujos del robot, se puede usar una regla de proporción entre la longitud real y la longitud en pixeles. Si la tabla mide 50 cm, y la imagen tiene 273750 pixeles de largo, entonces cada 10 pixeles equivalen a 1.826 mm. Usando el teorema de Pitágoras y el programa Paint, se puede calcular la distancia en pixeles entre dos puntos de la imagen, y luego convertirla a milímetros usando la regla de proporción.
 
-| Columna 1 | Columna 2 | Columna 3 |
-|-----------|-----------|-----------|
-| Fila 1, Columna 1 | Fila 1, Columna 2 | Fila 1, Columna 3 |
-| Fila 2, Columna 1 | Fila 2, Columna 2 | Fila 2, Columna 3 |
-| Fila 3, Columna 1 | Fila 3, Columna 2 | Fila 3, Columna 3 |
-
+![image](https://github.com/jasp311/Laboratorio_5/assets/47614570/3f2b81b9-9e1b-49ce-b8fd-b59d42e947c2)
 
 
 En los siguientes videos se observa el movimiento del robot
