@@ -23,7 +23,7 @@ Para facilitar el hallazgo de los diferentes angulos del robot pincher se analiz
 
 ![image](https://github.com/jasp311/Laboratorio_5/assets/47614570/9c773d14-1cf8-4869-b974-c6a3810e9783)
 
-$ P_{w} = P_{TCP} - I_{4a} $
+$$ P_{w} = P_{TCP} - I_{4a} $$
 
 Una forma de resolver este problema es aplicar la regla del paralelogramo para sumar vectores. Si dibujamos el vector tool y el vector L que representa el desplazamiento de la muñeca, podemos obtener el vector de la muñeca como la diagonal del paralelogramo formado por estos dos vectores. Así, se reconocer que el vector de la muñeca es el mismo vector tool menos un desplazamiento L en la dirección de a.
 
